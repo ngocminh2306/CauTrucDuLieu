@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cấu trúc dữ liệu</title>
+</head>
+
+<body>
+    <form id="form_1">
+        <label>Nhập input:</label><input type="text" value="123" id="input_1"/>
+        <button (onsubmit)="onSubmit($event)" type="submit">Chuyển đổi</button>
+        <br/>
+        <label>Kết quả:</label><b id="result_1"></b>
+    </form>
+
+</body>
+<script>
+    let form_1 = document.getElementById('form_1');
+    let input_1 = document.getElementById('input_1');
+    console.log(input_1)
+    form_1.addEventListener('submit', onSubmit)
+    function onSubmit(event) {
+        console.log('input_1',input_1);
+        debugger
+    }
+</script>
+</html>
